@@ -1,0 +1,59 @@
+.product-card{
+    border : 1px solid lightgray;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    transition: all 0.5s;
+}
+.product-card:hover{
+    transform: translateY(-10px);
+}
+.card-img{
+   width: fit-content;
+   height: 200px;
+   object-fit: cover;
+   object-position: center;
+}
+.phone-name{
+    font-size: 1.3em;
+    align-self: flex-start;
+    font-weight: bold;
+    padding: 15px;
+}
+.price-container{
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+.truck-icon{
+   color: green;
+   font-size: 1.4em;
+}
+.add-btn{
+    width: 100%;
+    background-color: #ffa400;
+    border: none;
+    outline: none;
+    padding: 7px;
+    font-size: 1.1em;
+    color: white;
+}
+.mobiles-count button{
+    cursor: pointer;
+    border:none;
+    outline: none;
+    background-color: #fff;
+    font-size: 1.2em;
+}
+.mobiles-count .count{
+    font-size: 1.1em;
+    display: inline-block;
+    margin-left: 7px;
+    margin-right: 7px;
+}

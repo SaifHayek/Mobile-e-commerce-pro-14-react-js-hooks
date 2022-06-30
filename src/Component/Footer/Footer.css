@@ -1,0 +1,9 @@
+footer{
+    padding: 25px;
+    text-align: center;
+    font-size: 1.2em;
+    word-spacing: 2px;
+}
+footer span{
+    color: dodgerblue;
+}

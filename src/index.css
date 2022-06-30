@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* general styles */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 85%;
+  margin: auto;
+}
+.app{
+  background-color: #ddd;
+  min-height: 100vh;
+}
+/* common styles */
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,320px));
+  gap: 30px;
+  justify-content: center;
+}
+.cart , .products{
+  background-color: #ddd;
+  padding: 25px 35px;
+}
+.products-title , .cart-title {
+    font-family: "Pacifico";
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
 }

@@ -1,0 +1,70 @@
+header{
+    background-color: #212529;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: "Pacifico";
+}
+header .nav-links{
+    display: flex;
+    gap: 15px;
+}
+header .nav-links .link {
+    font-size: 1.2em;
+    
+}
+header .nav-links .cart-icon{
+    color: inherit;
+    font-size: 1.2em;
+}
+header .nav-links .active{
+    color: orange;
+}
+
+.bar-icons{
+    color: white;
+    font-size: 1.5em;
+    display: none;
+}
+@media (max-width:768px) {
+    .bar-icons{
+        display: block;
+    }
+    header  {
+        position: relative;
+    }
+    header .nav-links{
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+        background-color: #212529;
+        text-align: center;
+        top:60px ;
+        left: -100%;
+        transition: all 0.5s;
+        gap: 0;
+
+    }
+    header .nav-links  a{
+        border-top: solid 1px white ;
+        padding: 5px;
+    }
+    header .nav-mobile{
+        left: 0%;
+        z-index: 1;
+    }
+}
